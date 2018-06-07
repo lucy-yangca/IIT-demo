@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46743" started-at="2018-06-07T00:06:54Z" finished-at="2018-06-07T00:07:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="46743" started-at="2018-06-07T00:06:54Z" finished-at="2018-06-07T00:07:41Z">
+      <class name="com.accenture.metrolinx.iit.demo.tests.TC_CWS_VerifyLogin">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.accenture.metrolinx.iit.demo.tests.TC_CWS_VerifyLogin@6a1aab78]" name="setup" is-config="true" duration-ms="19218" started-at="2018-06-07T00:06:54Z" finished-at="2018-06-07T00:07:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@a64e035]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.accenture.metrolinx.iit.demo.tests.TC_CWS_VerifyLogin@6a1aab78]" name="testLogin" duration-ms="18652" started-at="2018-06-07T00:07:13Z" data-provider="provider" finished-at="2018-06-07T00:07:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Passwd1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:com.accenture.metrolinx.iit.demo.tests.TC_CWS_VerifyLogin@6a1aab78]" name="testLogin" duration-ms="6998" started-at="2018-06-07T00:07:32Z" data-provider="provider" finished-at="2018-06-07T00:07:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Passwd2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.accenture.metrolinx.iit.demo.tests.TC_CWS_VerifyLogin@6a1aab78]" name="teardown" is-config="true" duration-ms="1810" started-at="2018-06-07T00:07:39Z" finished-at="2018-06-07T00:07:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.accenture.metrolinx.iit.demo.tests.TC_CWS_VerifyLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
