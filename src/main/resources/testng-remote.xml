@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1">
+	<parameter name="browser" value="chrome" />
+	<parameter name="remote" value="true"/>
+	<test name="Regression suite 1">
+		<classes>
+			<class
+				name="com.accenture.metrolinx.iit.demo.TC_CWS_VerifyLogin" />
+		</classes>
+	</test>
+</suite>

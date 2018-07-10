@@ -13,9 +13,10 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<selenium.version>3.12.0</selenium.version>
+		<selenium.version>3.13.0</selenium.version>
 		<testng.version>6.14.3</testng.version>
 		<webdrivermanager.version>2.2.1</webdrivermanager.version>
+		<appium.version>6.1.0</appium.version>
 	</properties>
 
 	<dependencies>
@@ -33,6 +34,11 @@
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-server</artifactId>
 			<version>${selenium.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>${appium.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -64,11 +70,24 @@
 				<version>2.21.0</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>target\classes\testng.xml</suiteXmlFile>
+						<suiteXmlFile>target\classes\${testng.xml}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+
+	<profiles>
+		<profile>
+			<activation>
+				<property>
+					<name>!debug</name>
+				</property>
+			</activation>
+			<properties>
+				<testng.xml>testng.xml</testng.xml>
+			</properties>
+		</profile>
+	</profiles>
 
 </project>
